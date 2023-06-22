@@ -1,0 +1,6 @@
+<div>
+  Saludo!
+  <input type="text" [(ngModel)]="user">
+  <p>Hola {{user ? user : 'gente'}}</p>
+  <button (click)="handleDelete()">Borrar</button>
+</div>

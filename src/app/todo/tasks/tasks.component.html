@@ -1,0 +1,6 @@
+<p>tasks works!</p>
+<ul>
+  <li *ngFor="let item of tasks">
+    <isd-card [item]="item" (deleting)="handleDelete($event)"></isd-card>
+  </li>
+</ul>

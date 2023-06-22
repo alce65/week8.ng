@@ -1,0 +1,15 @@
+<!-- eslint-disable @angular-eslint/template/interactive-supports-focus -->
+<!-- eslint-disable @angular-eslint/template/click-events-have-key-events -->
+
+<li>
+  <input type="checkbox" checked={item.isCompleted} />
+  <span>
+    <span>{{item.id}}</span>
+    <span>{{item.title}}</span>
+    <span>{{item.owner}}</span>
+  </span>
+
+  <i className="button" role="button" (click)="handleClickDelete()">
+    🗑️
+  </i>
+</li>
